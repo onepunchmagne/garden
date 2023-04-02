@@ -42,5 +42,6 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [Postgresql](documentation/postgresql.md)
 - [CORS configuration](documentation/cors-configuration.md)
 - [Cucumber](documentation/cucumber.md)
+- [Kipe authorization](documentation/kipe-authorization.md)
 
 <!-- jhipster-needle-documentation -->

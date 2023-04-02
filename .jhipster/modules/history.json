@@ -120,5 +120,16 @@
       "endOfLine" : "lf",
       "indentSize" : 2
     }
+  }, {
+    "module" : "kipe-authorization",
+    "date" : "2023-04-02T17:33:53.781810480Z",
+    "properties" : {
+      "packageName" : "opm.garden",
+      "projectName" : "Vegetables Garden",
+      "baseName" : "garden",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
   } ]
 }
