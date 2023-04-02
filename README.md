@@ -40,5 +40,6 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [Logs spy](documentation/logs-spy.md)
 - [Postgresql](documentation/postgresql.md)
 - [CORS configuration](documentation/cors-configuration.md)
+- [Cucumber](documentation/cucumber.md)
 
 <!-- jhipster-needle-documentation -->
