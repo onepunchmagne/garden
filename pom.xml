@@ -25,6 +25,7 @@
     <failsafe-plugin.version>3.0.0-M5</failsafe-plugin.version>
     <spring-boot.version>3.0.5</spring-boot.version>
     <testcontainers.version>1.17.6</testcontainers.version>
+    <liquibase.version>4.20.0</liquibase.version>
   </properties>
 
   <dependencyManagement>
@@ -79,6 +80,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
+      <version>${liquibase.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
@@ -88,6 +95,12 @@
       <groupId>org.testcontainers</groupId>
       <artifactId>postgresql</artifactId>
       <version>${testcontainers.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
