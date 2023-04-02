@@ -1,0 +1,14 @@
+{
+  "actions" : [ {
+    "module" : "init",
+    "date" : "2023-04-02T17:33:53.505517217Z",
+    "properties" : {
+      "packageName" : "opm.garden",
+      "projectName" : "Vegetables Garden",
+      "baseName" : "garden",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
+  } ]
+}
