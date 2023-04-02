@@ -45,5 +45,6 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [Kipe authorization](documentation/kipe-authorization.md)
 - [Kipe expression](documentation/kipe-expression.md)
 - [Cucumber authentication](documentation/cucumber-authentication.md)
+- [Dummy](documentation/dummy.md)
 
 <!-- jhipster-needle-documentation -->
