@@ -26,6 +26,7 @@
     <spring-boot.version>3.0.5</spring-boot.version>
     <testcontainers.version>1.17.6</testcontainers.version>
     <liquibase.version>4.20.0</liquibase.version>
+    <reflections.version>0.10.2</reflections.version>
   </properties>
 
   <dependencyManagement>
@@ -87,6 +88,16 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
@@ -101,6 +112,13 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>${reflections.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
