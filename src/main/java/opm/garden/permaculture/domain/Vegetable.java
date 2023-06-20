@@ -1,16 +1,17 @@
 package opm.garden.permaculture.domain;
 
 public abstract class Vegetable {
-  private final String variety;
+  private final Variety variety;
 
-  protected Vegetable(String variety) {
+  protected Vegetable(Variety variety) {
     this.variety = variety;
   }
 
-  public String variety() {
+  public Variety variety() {
     return variety;
   }
+
   public String getVariety() {
-    return variety;
+    return variety.get();
   }
 }

@@ -4,7 +4,7 @@ import opm.garden.error.domain.Assert;
 
 public final class Crop extends Vegetable {
 
-  public Crop(String variety) {
+  public Crop(Variety variety) {
     super(variety);
     Assert.notNull("variety", variety);
   }

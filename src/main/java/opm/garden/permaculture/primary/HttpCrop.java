@@ -2,6 +2,7 @@ package opm.garden.permaculture.primary;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import opm.garden.permaculture.domain.Crop;
+import opm.garden.permaculture.domain.Variety;
 
 @Schema(name = "Crop", description = "This is you crop, sow it with pleasure!")
 public class HttpCrop {
@@ -14,6 +15,6 @@ public class HttpCrop {
   }
 
   public Crop toDomain() {
-    return new Crop(variety);
+    return new Crop(Variety.of(variety));
   }
 }

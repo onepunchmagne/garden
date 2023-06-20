@@ -1,7 +1,7 @@
 package opm.garden.permaculture.domain;
 
 public class Plant extends Vegetable {
-  public Plant(String variety) {
+  public Plant(Variety variety) {
     super(variety);
   }
 
