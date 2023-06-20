@@ -27,14 +27,14 @@ class CropTest {
   }
 
   @Test
-  void shouldGetASeedingWhenSowingACrop() {
+  void shouldGetASeedlingWhenSowingACrop() {
     assertThat(garlicCrop().sow())
-      .isExactlyInstanceOf(Seeding.class);
+      .isExactlyInstanceOf(Seedling.class);
   }
 
   @Test
-  void shouldGetAPlantWhenWateringASeeding() {
-    assertThat(garlicSeeding().water())
+  void shouldGetAPlantWhenWateringASeedling() {
+    assertThat(garlicSeedling().water())
       .isExactlyInstanceOf(Plant.class);
   }
 
@@ -53,11 +53,11 @@ class CropTest {
     return new Crop(Variety.of("garlic"));
   }
 
-  private static Seeding garlicSeeding() {
+  private static Seedling garlicSeedling() {
     return garlicCrop().sow();
   }
 
   private static Plant garlicFruit() {
-    return garlicSeeding().water();
+    return garlicSeedling().water();
   }
 }

@@ -1,7 +1,7 @@
 package opm.garden.permaculture.domain;
 
-public final class Seeding extends Vegetable {
-  public Seeding(Variety variety) {
+public final class Seedling extends Vegetable {
+  public Seedling(Variety variety) {
     super(variety);
   }
 

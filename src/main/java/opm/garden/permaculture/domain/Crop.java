@@ -9,7 +9,7 @@ public final class Crop extends Vegetable {
     Assert.notNull("variety", variety);
   }
 
-  public Seeding sow() {
-    return new Seeding(variety());
+  public Seedling sow() {
+    return new Seedling(variety());
   }
 }

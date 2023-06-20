@@ -83,7 +83,7 @@ try it until you reach your own understanding:
 
 ## Ubiquitous language used
 
-* nouns: crop > seeding > plant > fruit
+* nouns: crop > seedling > plant > fruit
 * actions: sow > water > harvest
 
 ## Associated resources

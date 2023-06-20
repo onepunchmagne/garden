@@ -32,7 +32,7 @@ public class GardenSteps {
   }
 
   @Then("My garden has a vegetable planted")
-  public void shouldHaveASeeding() {
+  public void shouldHaveASeedling() {
     rest.get("/api/vegetables");
 
     assertThatLastResponse().hasOkStatus().hasElement("$.vegetables")
