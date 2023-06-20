@@ -3,7 +3,6 @@ package opm.garden.permaculture.primary;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import opm.garden.permaculture.application.VegetablesApplicationService;
-import opm.garden.permaculture.domain.Crop;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -23,8 +22,8 @@ class GardenResource {
   @Operation(summary = "Sow a crop in the garden")
   @ApiResponse(description = "Crop has been sowed", responseCode = "201")
   @ResponseStatus(HttpStatus.CREATED)
-  void sowACrop(@Validated @RequestBody Crop cropToSow) {
-    vegetables.sow(cropToSow);
+  void sowACrop(@Validated @RequestBody HttpCrop cropToSow) {
+    vegetables.sow(cropToSow.toDomain());
   }
 
   @GetMapping("/vegetables")
