@@ -8,4 +8,9 @@ public final class Seeding extends Vegetable {
   public Plant water() {
     return new Plant(variety());
   }
+
+  @Override
+  public Integer weight() {
+    return DEFAULT_WEIGHT * 2;
+  }
 }

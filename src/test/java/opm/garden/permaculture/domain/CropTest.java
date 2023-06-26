@@ -33,6 +33,24 @@ class CropTest {
   }
 
   @Test
+  void shouldRetrieveTheDefaultWeigthOfACrop() {
+    // GIVEN
+    Crop potatoCrop = new Crop("potato");
+
+    // WHEN - THEN
+    assertThat(potatoCrop.weight()).isEqualTo(1);
+  }
+
+  @Test
+  void shouldRetrieveTheDefaultWeigthOfOSeeding() {
+    // GIVEN
+    Crop potatoCrop = new Crop("potato");
+
+    // WHEN - THEN
+    assertThat(potatoCrop.sow().weight()).isEqualTo(2);
+  }
+
+  @Test
   void shouldGetAFruitWhenHarvestingAPlant() {
     assertThat(garlicFruit().harvest()).isExactlyInstanceOf(Fruit.class);
   }

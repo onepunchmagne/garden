@@ -8,4 +8,9 @@ public class Plant extends Vegetable {
   public Fruit harvest() {
     return new Fruit(variety());
   }
+
+  @Override
+  public Integer weight() {
+    return DEFAULT_WEIGHT;
+  }
 }

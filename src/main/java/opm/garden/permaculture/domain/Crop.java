@@ -12,6 +12,11 @@ public final class Crop extends Vegetable {
     Assert.notNull("variety", variety);
   }
 
+  @Override
+  public Integer weight() {
+    return DEFAULT_WEIGHT;
+  }
+
   public Seeding sow() {
     return new Seeding(variety());
   }
